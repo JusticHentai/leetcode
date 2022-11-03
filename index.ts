@@ -1,3 +1,3 @@
-import Utils from './src'
+import twoSum from './src/twoSum'
 
-export { Utils as default }
+export { twoSum }
