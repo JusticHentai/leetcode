@@ -1,3 +1,6 @@
+/**
+ * 替换空格
+ */
 export default function replaceSpace(s: string): string {
   const sList = s.split('')
 

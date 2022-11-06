@@ -1,3 +1,6 @@
+/**
+ * 二维数组中的查找
+ */
 export default function findNumberIn2DArray(
   matrix: number[][],
   target: number
