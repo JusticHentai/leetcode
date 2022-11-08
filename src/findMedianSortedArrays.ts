@@ -31,9 +31,12 @@ export default function findMedianSortedArrays(
     }
   }
 
+  // 超过边界只有贴近时 往 差 12 看看就知道二分出来的边界
+
   const nums1Index = left
   const nums2Index = totalLeft - nums1Index
 
+  // 其实就是找 中位数
   const nums1LeftMax =
     nums1Index === 0 ? -Number.MAX_VALUE : nums1[nums1Index - 1]
   const nums1RightMin = nums1Index === m ? Number.MAX_VALUE : nums1[nums1Index]
