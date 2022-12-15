@@ -3,6 +3,7 @@ export default function findKthLargest(nums: number[], k: number): number {
 
   buildMaxHeap(nums, heapSize)
 
+  // 取 k 在最顶 所以 + 1 少做一次
   for (let i = nums.length - 1; i >= nums.length - k + 1; i--) {
     ;[nums[0], nums[i]] = [nums[i], nums[0]]
 
