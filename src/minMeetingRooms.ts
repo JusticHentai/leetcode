@@ -20,3 +20,18 @@ export default function minMeetingRooms(intervals: number[][]): number {
 
   return n
 }
+
+const obj: Record<string, any> = {
+  a: 1,
+  b: true,
+  c: 'hello',
+}
+
+function getProperty<T extends object, K extends keyof T>(
+  obj: T,
+  key: K
+): T[K] {
+  return obj[key]
+}
+
+const val = getProperty(obj, 'c')
